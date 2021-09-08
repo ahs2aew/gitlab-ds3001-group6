@@ -10,9 +10,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-load(ggplot)
+library(ggplot)
+library(RCurl)
 ```
 
+```{r}
+data1 = read.csv("/Users/Student/Downloads/SNAP_history_1969_2019.csv")
+```
 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
