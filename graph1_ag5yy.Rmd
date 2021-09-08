@@ -15,8 +15,12 @@ library(RCurl)
 ```
 
 ```{r}
-data1 = read.csv("/Users/Student/Downloads/SNAP_history_1969_2019.csv")
+library(ggplot2)
+data1 = read.csv("/Users/Anna/Downloads/SNAP_history_1969_2019.csv")
+
+ggplot(data1,aes(x=Fiscal.Year,y=Average.Participation))+geom_point()
 ```
+
 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
